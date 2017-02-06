@@ -188,7 +188,7 @@ class WXBot:
 
         for group in self.group_members:
             for member in self.group_members[group]:
-                if member['UserName'] not in self.account_info:
+                if member['UserName'] not in self.account_info['group_member']:
                     self.account_info['group_member'][member['UserName']] = \
                         {'type': 'group_member', 'info': member, 'group': group}
 
